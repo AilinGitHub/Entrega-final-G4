@@ -1,0 +1,120 @@
+---
+title: "Ejercicios"
+author: "Grupo 4"
+date: "2024-04-26"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Integrantes Grupo 4
+
+* Graff Ailin
+* Lopez Leandro
+* Maglione Nicolas
+* Sacchi Gina
+
+## Tarea 1
+1- Construya un vector con la primeras 20 letras MAYÚSCULAS usando la función LETTERS.
+
+```{r}
+vector_letras <- LETTERS[1:20]
+vector_letras
+```
+
+
+## Tarea 2
+
+2- Construya una matriz de 10 × 10 con los primeros 100 números positivos pares.
+
+
+```{r}
+numpar <- seq(2, 200, by=2)
+matrizpar <- matrix(numpar, nrow=10, ncol = 10)
+matrizpar
+```
+
+
+## Tarea 3
+
+3- Construya una matriz identidad de dimension 3x3 . Recuerde que una matriz identidad tiene sólo unos en la diagonal principal y los demás elementos son cero.
+
+
+```{r}
+identidad = diag(1, 3, 3)
+identidad
+```
+
+
+
+## Tarea 4
+
+4- Construya una lista con los anteriores tres objetos creados.
+
+```{r}
+Lista <- list(vector_letras, matrizpar, identidad)
+Lista
+```
+
+## Tarea 5
+
+
+5- Construya un marco de datos o data frame con las respuestas de 3 personas a las preguntas: (a) ¿Cuál es su edad en años? (b) ¿Tipo de música que más le gusta? (c) ¿Tiene usted pareja sentimental estable?
+
+
+```{r}
+Edad_en_años <- c(33, 30, 31, 32)
+Tipo_de_música  <- c("rock", "pop", "lentos", "electro")
+Tiene_usted_pareja_sentimental_estable <- c("si","si","si","si")
+resultados <- data.frame(Edad_en_años, Tipo_de_música, Tiene_usted_pareja_sentimental_estable)
+resultados
+```
+
+
+
+
+
+
+## Tarea 6
+
+6- ¿Cuál es el error al correr el siguiente código? ¿A qué se debe?
+
+
+edad <- c(15, 19, 13, NA, 20) 
+deporte <- c(TRUE, TRUE, NA, FALSE, TRUE) 
+comic_fav <- c(NA, ‘Superman’, ‘Batman’, NA, ‘Batman’) 
+matrix(edad, deporte, comic_fav)
+
+
+
+* edad <- c(15, 19, 13, NA, 20) 
+
+```{r}
+edad <- c(15, 19, 13, NA, 20) 
+matrix(na.omit(edad))
+```
+
+
+* deporte <- c(TRUE, TRUE, NA, FALSE, TRUE) 
+
+```{r}
+deporte <- c(TRUE, TRUE, NA, FALSE, TRUE)
+matrix(deporte)
+```
+
+* comic_fav <- c(NA, ‘Superman’, ‘Batman’, NA, ‘Batman’) 
+
+```{r}
+comic_fav <- c(NA, "Superman", "Batman", NA, "Batman")
+matrix(comic_fav)
+```
+
+* matrix(edad, deporte, comic_fav)
+
+```{r}
+data.frame(edad, deporte, comic_fav)
+```
+
+
