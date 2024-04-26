@@ -1,0 +1,131 @@
+---
+title: "Asincronico - camionetas"
+author: "Grupo 4"
+date: "2024-04-23"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+## Integrantes Grupo 4
+
+* Graff Ailin
+* Lopez Leandro
+* Maglione Nicolas
+* Sacchi Gina
+
+Para el siguiente trabajo, se utilizó el código "camionetas.csv" brindado por el profesor de la materia, Ricardo R. Palma.
+
+El código original puede ser recuperado de [Camionetas](https://github.com/AilinGitHub/Entrega-final-G4/blob/main/camionetas.csv)
+
+```{r}
+library(readr)
+camionetas <- read_csv("https://raw.githubusercontent.com/AilinGitHub/Entrega-final-G4/main/camionetas.csv")
+View(camionetas)
+
+```
+
+
+## ver cabecera
+
+```{r}
+head(camionetas)
+```
+
+## promedio mpg
+
+```{r}
+promedio_mpg <- mean(camionetas$mpg)
+promedio_mpg
+
+```
+
+
+
+## Primedio hp
+
+```{r}
+promedio_hp <- mean(camionetas$hp, 0.5,)
+promedio_hp
+```
+## Promedio de Engranaje
+
+```{r}
+promedio_gear <- mean(camionetas$gear, 0.5,)
+promedio_gear
+```
+
+Promedio Cilindrada
+
+```{r}
+promedio_Cyl <- mean(camionetas$cyl, 0.5,)
+promedio_Cyl
+```
+
+## Distribucion Normal
+
+```{r}
+x <- seq(-4, 4, length.out=100)
+dnorm_mpg <- dnorm(x)
+plot(dnorm_mpg, type="l")
+```
+
+## Desvio Estanadar
+
+
+
+## Sumary
+
+* Mpg
+
+```{r}
+summary(camionetas$mpg)
+```
+
+
+## ploteos de Histogramas
+
+```{r}
+hist(camionetas$mpg)
+hist(camionetas$hp)
+hist(camionetas$gear)
+hist(camionetas$cyl)
+
+```
+
+
+## Boxplot para ver si hay outlayer o no.
+
+## Ploteos de Densidad
+
+```{r}
+par(mfrow=c(2,2))
+plot(density(camionetas$mpg))
+plot(density(camionetas$cyl))
+
+```
+
+```{r}
+plot(sort(camionetas$mpg))
+```
+
+```{r}
+plot(camionetas$cyl, camionetas$mpg)
+```
+tablas de correlacion 
+
+```{r}
+plot(camionetas)
+```
+
+```{r}
+plot(camionetas[, 2:4])
+```
+
+```{r}
+plot(camionetas[,1:6])
+```
+
