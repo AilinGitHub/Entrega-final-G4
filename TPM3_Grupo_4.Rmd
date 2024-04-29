@@ -1,0 +1,1152 @@
+---
+title: Full title of the paper (Capitalized)
+author:
+  - name: Grupo 4
+    affil: 1,2,\ddagger,*
+    orcid: 0000-0000-0000-0000
+  - name: John Doe
+    affil: 2, \dagger, \ddagger
+affiliation:
+  - num: 1
+    address: |
+      Muenster University of Applied Sciences - 
+      Institute for Infrastructure, Water, Resources, Environment
+      Correnstr. 25, 48149 Muenster, Germany
+    email: leutnant@fh-muenster.de
+  - num: 2
+    address: |
+      Your department
+      Street, City, Country
+    email: mail@mail.com
+# author citation list in chicago format
+authorcitation: |
+  Leutnant, D.; Doe, J.
+# firstnote to eighthnote
+firstnote: |
+  Current address: Updated affiliation
+secondnote: |
+  These authors contributed equally to this work.
+correspondence: |
+  leutnant@fh-muenster.de; Tel.: +XX-000-00-0000.
+# document options
+journal: notspecified
+type: article
+status: submit
+# front matter
+simplesummary: |
+  A Simple summary goes here. esta investigacion trabaja sobre ....(10 palabras)
+abstract: |
+  (escribir al final) A single paragraph of about 200 words maximum. For research articles, 
+  abstracts should give a pertinent overview of the work. We strongly encourage
+  authors to use the following style of structured abstracts, but without 
+  headings: 1) introduccion: Place the question addressed in a broad context and
+  highlight the purpose of the study; 2) materiales y metodos: Describe briefly the main
+  methods or treatments applied; 3) caso de estudio: Summarize the article's main 
+  findings; and 4) discusion final y conclusiones: Indicate the main conclusions or interpretations. 
+  The abstract should be an objective representation of the article, it must not 
+  contain results which are not presented and substantiated in the main text and 
+  should not exaggerate the main conclusions.
+# back matter
+keywords: |
+  keyword 1; keyword 2; keyword 3 (list three to ten pertinent keywords specific 
+  to the article, yet reasonably common within the subject discipline.).
+acknowledgement: |
+  All sources of funding of the study should be disclosed. Please clearly 
+  indicate grants that you have received in support of your research work. 
+  Clearly state if you received funds for covering the costs to publish in open 
+  access.
+authorcontributions: |
+  For research articles with several authors, a short paragraph specifying their 
+  individual contributions must be provided. The following statements should be 
+  used ``X.X. and Y.Y. conceive and designed the experiments; X.X. performed the 
+  experiments; X.X. and Y.Y. analyzed the data; W.W. contributed 
+  reagents/materials/analysis tools; Y.Y. wrote the paper.'' Authorship must be
+  limited to those who have contributed substantially to the work reported.
+funding: |
+  Please add: ``This research received no external funding'' or ``This research 
+  was funded by NAME OF FUNDER grant number XXX.'' and  and ``The APC was funded 
+  by XXX''. Check carefully that the details given are accurate and use the 
+  standard spelling of funding agency names at 
+  \url{https://search.crossref.org/funding}, any errors may affect your future 
+  funding.
+institutionalreview: |
+  In this section, you should add the Institutional Review Board Statement and 
+  approval number, if relevant to your study. You might choose to exclude 
+  this statement if the study did not require ethical approval. Please note 
+  that the Editorial Office might ask you for further information. Please add 
+  “The study was conducted in accordance with the Declaration of Helsinki, 
+  and approved by the Institutional Review Board (or Ethics Committee) of 
+  NAME OF INSTITUTE (protocol code XXX and date of approval).” for studies 
+  involving humans. OR “The animal study protocol was approved by the 
+  Institutional Review Board (or Ethics Committee) of NAME OF INSTITUTE 
+  (protocol code XXX and date of approval).” for studies involving animals. 
+  OR “Ethical review and approval were waived for this study due to REASON 
+  (please provide a detailed justification).” OR “Not applicable” for
+   studies not involving humans or animals.
+informedconsent: |
+  Any research article describing a study involving humans should contain this 
+  statement. Please add ``Informed consent was obtained from all subjects 
+  involved in the study.'' OR ``Patient consent was waived due to REASON 
+  (please provide a detailed justification).'' OR ``Not applicable'' for 
+  studies not involving humans. You might also choose to exclude this statement 
+  if the study did not involve humans.
+  
+  Written informed consent for publication must be obtained from participating 
+  patients who can be identified (including by the patients themselves). Please 
+  state ``Written informed consent has been obtained from the patient(s) to 
+  publish this paper'' if applicable.
+dataavailability: |
+  We encourage all authors of articles published in MDPI journals to share 
+  their research data. In this section, please provide details regarding where 
+  data supporting reported results can be found, including links to publicly 
+  archived datasets analyzed or generated during the study. Where no new data 
+  were created, or where data is unavailable due to privacy or ethical 
+  re-strictions, a statement is still required. Suggested Data Availability 
+  Statements are available in section “MDPI Research Data Policies” at 
+  \url{https://www.mdpi.com/ethics}.
+conflictsofinterest: |
+  Declare conflicts of interest or state 'The authors declare no conflict of 
+  interest.' Authors must identify and declare any personal circumstances or
+  interest that may be perceived as inappropriately influencing the
+  representation or interpretation of reported research results. Any role of the
+  funding sponsors in the design of the study; in the collection, analyses or 
+  interpretation of data in the writing of the manuscript, or in the decision to 
+  publish the results must be declared in this section. If there is no role, 
+  please state 'The founding sponsors had no role in the design of the study; 
+  in the collection, analyses, or interpretation of data; in the writing of the 
+  manuscript, an in the decision to publish the results'.
+sampleavailability: |
+  Samples of the compounds ...... are available from the authors.
+supplementary: |
+ The following supporting information can be downloaded at:  
+ \linksupplementary{s1}, Figure S1: title; Table S1: title; Video S1: title.
+abbreviations:
+  - short: MDPI
+    long: Multidisciplinary Digital Publishing Institute
+  - short: DOAJ
+    long: Directory of open access journals
+  - short: TLA
+    long: Three letter acronym
+  - short: LD 
+    long: linear dichroism
+bibliography: mybibfile.bib
+appendix: appendix.tex
+endnotes: false
+output: 
+  rticles::mdpi_article:
+    extra_dependencies: longtable
+---
+
+# Version
+
+This Rmd-skeleton uses the mdpi Latex template published 2023-03-25. 
+However, the official template gets more frequently updated than the **rticles**
+package. Therefore, please make sure prior to paper submission, that you're 
+using the most recent .cls, .tex and .bst files 
+(available [here](http://www.mdpi.com/authors/latex)).
+
+# Article Header Information
+
+The YAML header includes information needed mainly for formatting the front and 
+back matter of the article. Required elements include:
+
+```yaml
+title: Title of the paper
+author:
+  - name: first and last name
+    affil: |
+      One or more comma seperated numbers corresponding to affilitation
+      and one or more  comma seperated symbols corresponding 
+      optional notes.
+    orcid: optional orcid number
+affiliation:  
+  - num: 1,..., n for each affiliation
+    address: required
+    email: required
+authorcitation: |
+  Lastname, F.
+correspondence: |
+  email@email.com; Tel.: +XX-000-00-0000.
+journal: notspecified
+type: article
+status: submit
+```
+
+Journal options are in Table \ref{tab:mdpinames}. The `status` variable should 
+generally not be changed by authors. The `type` variable describes 
+the type of of submission and defaults to `article` but can be replaced with any of the ones in Table \ref{tab:mdpitype}
+
+```{r mdpitype, echo = FALSE}
+type <- c("abstract, addendum, article, book, bookreview, briefreport, 
+casereport, comment, commentary, communication, conferenceproceedings, 
+correction, conferencereport, entry, expressionofconcern, extendedabstract, 
+datadescriptor, editorial, essay, erratum, hypothesis, interestingimage, 
+obituary, opinion, projectreport, reply, retraction, review, perspective, 
+protocol, shortnote, studyprotocol, systematicreview, supfile, 
+technicalnote, viewpoint, guidelines, registeredreport, tutorial")
+knitr::kable(rticles::string_to_table(type, 3), 
+             col.names = NULL, format = "latex", booktab = TRUE, 
+             caption = "MDPI article types.")
+```
+
+## Journal Specific YAML variables
+
+```yaml
+# for journal Diversity,
+# add the Life Science Identifier using:
+lsid: http://zoobank.org/urn:lsid:zoobank.org:act:nnnn
+
+
+# for journal Applied Sciences
+# add featured application
+featuredapplication: |
+  Authors are encouraged to provide a concise 
+  description of the specific application or 
+  a potential application of the work. This 
+  section is not mandatory.
+
+# for the journal Data
+# add dataset doi and license
+dataset: https://doi.org/10.1000/182
+datasetlicense: CC-BY-4.0
+
+# for the journal Toxins
+# add key contributions
+keycontributions: |
+  The breakthroughs or highlights of the manuscript. 
+  Authors can write one or two sentences to describe 
+  the most important part of the paper.
+
+# for the journal Encyclopedia
+encyclopediadef: |
+  For entry manuscripts only: please provide a brief overview
+  of the entry title instead of an abstract.
+entrylink: The Link to this entry published on the encyclopedia platform.
+
+# for the journal Advances in Respiratory Medicine
+# add highlights
+addhighlights: |
+  This is an obligatory section in “Advances in Respiratory Medicine”, 
+  whose goal is to increase the discoverability and readability of the
+  article via search engines and other scholars. Highlights should not 
+  be a copy of the abstract, but a simple text allowing the reader to 
+  quickly and simplified find out what the article is about and what can 
+  be cited from it. Each of these parts should be devoted up to 2~bullet 
+  points.
+
+```
+
+
+\startlandscape
+```{r, mdpinames, echo=FALSE, results='asis'}
+mdpi_journals <- "acoustics, actuators, addictions, admsci, adolescents, aerobiology, aerospace, agriculture, agriengineering, agrochemicals, agronomy, ai, air, algorithms, allergies, alloys, analytica, analytics, anatomia, animals, antibiotics, antibodies, antioxidants, applbiosci, appliedchem, appliedmath, applmech, applmicrobiol, applnano, applsci, aquacj, architecture, arm, arthropoda, arts, asc, asi, astronomy, atmosphere, atoms, audiolres, automation, axioms, bacteria, batteries, bdcc, behavsci, beverages, biochem, bioengineering, biologics, biology, biomass, biomechanics, biomed, biomedicines, biomedinformatics, biomimetics, biomolecules, biophysica, biosensors, biotech, birds, bloods, blsf, brainsci, breath, buildings, businesses, cancers, carbon, cardiogenetics, catalysts, cells, ceramics, challenges, chemengineering, chemistry, chemosensors, chemproc, children, chips, cimb, civileng, cleantechnol, climate, clinpract, clockssleep, cmd, coasts, coatings, colloids, colorants, commodities, compounds, computation, computers, condensedmatter, conservation, constrmater, cosmetics, covid, crops, cryptography, crystals, csmf, ctn, curroncol, cyber, dairy, data, ddc, dentistry, dermato, dermatopathology, designs, devices, diabetology, diagnostics, dietetics, digital, disabilities, diseases, diversity, dna, drones, dynamics, earth, ebj, ecologies, econometrics, economies, education, ejihpe, electricity, electrochem, electronicmat, electronics, encyclopedia, endocrines, energies, eng, engproc, entomology, entropy, environments, environsciproc, epidemiologia, epigenomes, est, fermentation, fibers, fintech, fire, fishes, fluids, foods, forecasting, forensicsci, forests, foundations, fractalfract, fuels, future, futureinternet, futurepharmacol, futurephys, futuretransp, galaxies, games, gases, gastroent, gastrointestdisord, gels, genealogy, genes, geographies, geohazards, geomatics, geosciences, geotechnics, geriatrics, grasses, gucdd, hazardousmatters, healthcare, hearts, hemato, hematolrep, heritage, higheredu, highthroughput, histories, horticulturae, hospitals, humanities, humans, hydrobiology, hydrogen, hydrology, hygiene, idr, ijerph, ijfs, ijgi, ijms, ijns, ijpb, ijtm, ijtpp, ime, immuno, informatics, information, infrastructures, inorganics, insects, instruments, inventions, iot, j, jal, jcdd, jcm, jcp, jcs, jcto, jdb, jeta, jfb, jfmk, jimaging, jintelligence, jlpea, jmmp, jmp, jmse, jne, jnt, jof, joitmc, jor, journalmedia, jox, jpm, jrfm, jsan, jtaer, jvd, jzbg, kidneydial, kinasesphosphatases, knowledge, land, languages, laws, life, liquids, literature, livers, logics, logistics, lubricants, lymphatics, machines, macromol, magnetism, magnetochemistry, make, marinedrugs, materials, materproc, mathematics, mca, measurements, medicina, medicines, medsci, membranes, merits, metabolites, metals, meteorology, methane, metrology, micro, microarrays, microbiolres, micromachines, microorganisms, microplastics, minerals, mining, modelling, molbank, molecules, mps, msf, mti, muscles, nanoenergyadv, nanomanufacturing, nanomaterials, ncrna, ndt, network, neuroglia, neurolint, neurosci, nitrogen, notspecified, nri, nursrep, nutraceuticals, nutrients, obesities, oceans, ohbm, onco, oncopathology, optics, oral, organics, organoids, osteology, oxygen, parasites, parasitologia, particles, pathogens, pathophysiology, pediatrrep, pharmaceuticals, pharmaceutics, pharmacoepidemiology, pharmacy, philosophies, photochem, photonics, phycology, physchem, physics, physiologia, plants, plasma, platforms, pollutants, polymers, polysaccharides, poultry, powders, preprints, proceedings, processes, prosthesis, proteomes, psf, psych, psychiatryint, psychoactives, publications, quantumrep, quaternary, qubs, radiation, reactions, receptors, recycling, regeneration, religions, remotesensing, reports, reprodmed, resources, rheumato, risks, robotics, ruminants, safety, sci, scipharm, sclerosis, seeds, sensors, separations, sexes, signals, sinusitis, skins, smartcities, sna, societies, socsci, software, soilsystems, solar, solids, spectroscj, sports, standards, stats, std, stresses, surfaces, surgeries, suschem, sustainability, symmetry, synbio, systems, targets, taxonomy, technologies, telecom, test, textiles, thalassrep, thermo, tomography, tourismhosp, toxics, toxins, transplantology, transportation, traumacare, traumas, tropicalmed, universe, urbansci, uro, vaccines, vehicles, venereology, vetsci, vibration, virtualworlds, viruses, vision, waste, water, wem, wevj, wind, women, world, youth, zoonoticdis"
+
+knitr::kable(rticles::string_to_table(mdpi_journals, 8),
+             col.names = NULL,
+             format = "latex",
+             booktabs = TRUE, 
+             caption = "MDPI journal names.",
+             longtable = TRUE)
+
+```
+\finishlandscape
+
+
+# Integrantes Grupo 4
+
+* Graff Ailin
+* Lopez Leandro
+* Maglione Nicolas
+* Sacchi Gina
+
+#Cuerpo Docente
+
+* Profesor: Dr. Ricardo Palma
+* Asesor Pedagógico: Mg. Sebastián Miers
+* Coordinadora Académica: Mg. Ing. Andrea Caballero
+* Coordinadora Logística: Dra. Gabriela del Hoyo
+
+
+# Introducción
+## Analisis y evaluacion de la produccion de hidrocarburos no convencionales en Argentina, por YPF SA en el período de Marzo 2024
+En el presente documento analisamos los datos de produccion de petroleo, gas y agua de pozos no convencionales de Argentina, presentados por YPF para el período de Marzo de 2024, en el que se abordaran diferentes analisis, evaluaciones y comparaciones que resultan de gran interes para cumplir con el objetivo de aplicar los conocimientos aprendidos durante el MÓDULO 3: Tecnologías Emergentes en los procesos Productivos - de la Diplomatura Universitaria en Gestión y Tecnologías para el desarrollo Convencional y No Convencional de Hidrocarburos.
+
+
+# Materiales y Metodos
+
+## base o conjunto de datos (datasets)
+
+Con base en el dataset elegido, el objetivo es analizar los valores de producción de petroleo y gas de los pozos no convencionales de YPF para el mes de marzo 2024 y establecer la ubicacion de los pozos involucrados, asi como los sistemas de extraccion elegidos
+
+El dataset de estudio es de nación, Producción de Petroleo y Gas No convencional del mes de marzo de 2024. Para el mismo se filtraron los valores, para que queden únicamente los pozos de YPF. Asi mismo, se eliminaron las columnas que no aportaban informacion, es decir que no contenian datos, y podrian suponer un conflicto para la realización de este trabajo.
+
+
+La ubicación de esta tabla puede ser recuperado de:
+[Producción_NC_YPF](https://github.com/AilinGitHub/Entrega-final-G4/blob/main/Produccion%20NC%20YPF.csv)
+
+
+```{r}
+library(readr)
+Produccion_NC_YPF <- read_delim("Produccion NC YPF.csv", 
+    delim = ";", escape_double = FALSE, col_types = cols(prod_gas = col_double(), 
+        coordenadax = col_number(), coordenaday = col_number()), 
+    trim_ws = TRUE)
+View(Produccion_NC_YPF)
+```
+
+
+## Metdología - paquetes de datos a utilizar
+
+
+Para el trabajo se emplearon las siguientes bibliotecas.
+
+library(tidyverse)
+library(cluster)
+library(factoextra)
+library(ggplot2)
+library(maps)
+library(sf)
+library(leaflet)
+library(readr)
+library(readxl)
+library(stats)
+library(png)
+library(ucminf)
+library(orloca)
+library(leaflet.extras)
+library(dplyr)
+library(tinytex)
+library(sp)
+library(car)
+
+```{r}
+library(tidyverse)
+library(cluster)
+library(factoextra)
+library(ggplot2)
+library(maps)
+library(sf)
+library(leaflet)
+library(readr)
+library(readxl)
+library(stats)
+library(png)
+library(ucminf)
+library(orloca)
+library(leaflet.extras)
+library(dplyr)
+library(tinytex)
+library(sp)
+library(car)
+```
+
+
+## Asignación de variables
+
+Primero asignamos al datasetcomo "datos" para simplificar el trabajo
+
+```{r}
+datos <- Produccion_NC_YPF
+```
+
+Asignamos variables a la produccion de gas y petroleo. Ademas del tipo de estado en el que se encuentra:
+
+```{r}
+ProdPet <-(datos$prod_pet)
+ProdGas <-(datos$prod_gas)
+TipoEstado <- c(datos$tipoestado)
+Sigla <- c(datos$sigla)
+```
+
+asignamos las variables correspondientes al tipo de estado del pozo:
+
+```{r}
+EEF <- nrow(subset(datos, datos$tipoestado == "Extraccion Efectiva"))
+ES <- nrow(subset(datos, datos$tipoestado == "En Estudio"))
+PT <- nrow(subset(datos, datos$tipoestado == "Parado Transitoriamente"))
+ARGP <- nrow(subset(datos, datos$tipoestado == "Parado Alta Relacion Gas/Petroleo"))
+EER <- nrow(subset(datos, datos$tipoestado == "En Espera de Reparacion"))	
+EIE <- nrow(subset(datos, datos$tipoestado == "En Inyeccion Efectiva"))	
+AT <- nrow(subset(datos, datos$tipoestado == "Abandono Temporario"))	
+A <- nrow(subset(datos, datos$tipoestado == "Abandonado"))
+EE <- nrow(subset(datos, datos$tipoestado == "En Estudio"))
+AA <- nrow(subset(datos, datos$tipoestado == "A Abandonar"))
+ER <- nrow(subset(datos, datos$tipoestado == "En Reparacion"))
+ERG <- nrow(subset(datos, datos$tipoestado == "En Reserva de Gas"))
+RRSA <- nrow(subset(datos, datos$tipoestado == "En Reserva para Recup. Sec./Asist."))
+OCI <- nrow(subset(datos, datos$tipoestado == "Otras Situacion Inactivo"))
+
+```
+
+valores promedio
+
+```{r}
+prom_pet <- mean(Produccion_NC_YPF$prod_pet)
+prom_gas <- mean(Produccion_NC_YPF$prod_gas)
+prom_agua <- mean(Produccion_NC_YPF$prod_agua)
+
+```
+
+
+Para el desarrollo del analisis de profundidades
+
+```{r}
+
+tipo_ext <- c(datos$tipoextraccion)
+
+tipo_pz <- c(datos$tipopozo)
+
+profundidad <- c(datos$profundidad)
+
+area <- c(datos$areapermisoconcesion)
+
+prov <- c(datos$provincia)
+
+sub_tipo_rec <- c(datos$sub_tipo_recurso)
+
+
+```
+
+se establecen nuevas variables para la creacion de un nuevo data.frame que servira al analisis de la produccion.
+
+```{r}
+tipo_de_extraccion<- C(datos$tipoextraccion)
+
+prod.tipoextraccion<- data.frame(tipo_de_extraccion,ProdPet,ProdGas)
+
+Surgencia_Natural_Pet<- sum(subset(prod.tipoextraccion$ProdPet,tipo_de_extraccion=="Surgencia Natural"))
+
+Plunger_Lift_Pet<- sum(subset(prod.tipoextraccion$ProdPet,tipo_de_extraccion=="Plunger Lift"))
+
+Bombeo_Mecanico_Pet<- sum(subset(prod.tipoextraccion$ProdPet,tipo_de_extraccion=="Bombeo Mecanico"))
+
+Gas_Lift_Pet<- sum(subset(prod.tipoextraccion$ProdPet,tipo_de_extraccion=="Gas Lift"))
+
+## se calculo el total de produccion de petroleo por cada metodo aplicado
+
+
+Surgencia_Natural_gas<- sum(subset(prod.tipoextraccion$ProdGas,tipo_de_extraccion=="Surgencia Natural"))
+
+Plunger_Lift_gas<- sum(subset(prod.tipoextraccion$ProdGas,tipo_de_extraccion=="Plunger Lift"))
+
+Bombeo_Mecanico_gas<- sum(subset(prod.tipoextraccion$ProdGas,tipo_de_extraccion=="Bombeo Mecanico"))
+
+Gas_Lift_gas<- sum(subset(prod.tipoextraccion$ProdGas,tipo_de_extraccion=="Gas Lift"))
+
+## se calculo el total de produccion de gas por cada metodo aplicado
+
+```
+
+para el desarrollo de la parte geográfica:
+
+```{r}
+# Damos a conocer las areas en donde se encuentran los pozos NC
+
+AGUADA_DE_LA_ARENA <- c(length (which (area == "AGUADA DE LA ARENA")))
+
+AGUADA_DEL_CHANAR <- c(length (which (area == "AGUADA DEL CHANAR")))
+
+AL_NORTE_DE_LA_DORSA <- c(length (which (area == "AL NORTE DE LA DORSAL")))
+
+BAJO_DEL_TORO <- c(length (which (area == "BAJO DEL TORO")))
+
+BAJO_DEL_TORO_NORTE <- c(length (which (area == "BAJO DEL TORO NORTE")))
+
+BANDURRIA_SUR <- c(length (which (area == "BANDURRIA SUR")))
+
+CERRO_ARENA <- c(length (which (area == "CERRO ARENA")))
+
+CERRO_LAS_MINAS <- c(length (which (area == "CERRO LAS MINAS")))
+
+CERRO_MANRIQUE <- c(length (which (area == "CERRO MANRIQUE")))
+
+CHIUIDO_DE_LA_SIERRA_NEGRAS <- c(length (which (area == "CHIUIDO DE LA SIERRA NEGRAS")))
+
+CN_VII_A <- c(length (which (area == "CN VII A")))
+
+DADIN <- c(length (which (area == "DADIN")))
+
+EL_OREJANO <- c(length (which (area == "EL OREJANO")))
+
+ESTACION_FERNADEZ_ORO <- c(length (which (area == "ESTACION FERNADEZ ORO")))
+
+FILO_MORADO <- c(length (which (area == "FILO MORADO")))
+
+LA_AMARGA_CHICA <- c(length (which (area == "LA AMARGA CHICAL")))
+
+LA_RIBERA_BLOQUE_I <- c(length (which (area == "LA RIBERA BLOQUE I")))
+
+LA_RIBERA_BLOQUE_II <- c(length (which (area == "LA RIBERA BLOQUE II")))
+
+LAS_MANADAS <- c(length (which (area == "LAS MANADAS")))
+
+LAS_TACANAS <- c(length (which (area == "LAS TACANAS")))
+
+LOMA_AMARILLA_SUR <- c(length (which (area == "LOMA AMARILLA SUR")))
+
+LOMA_CAMPANA <- c(length (which (area == "LOMA CAMPANA")))
+
+LOMA_DEL_MOLLE <- c(length (which (area == "LOMA DEL MOLLE")))
+
+LOMA_LA_LATA_SIERRA_BARROSA <- c(length (which (area == "LOMA LA LATA-SIERRA BARROSA")))
+
+LOS_CALDENES <- c(length (which (area == "LOS CALDENES")))
+
+OCTOGONO <- c(length (which (area == "OCTOGONO")))
+
+PASO_DE_LAS_BARDAS_NORTE <- c(length (which (area == "PASO DE LAS BARDAS NORTE")))
+
+RINCON_DEL_MANGRULLO <- c(length (which (area == "RINCON DEL MANGRULLO")))
+
+RIO_NEUQUEN <- c(length (which (area == "RIO Neuquen")))
+
+VALLE_DEL_RIO_GRANDE <- c(length (which (area == "VALLE DEL RIO GRANDE")))
+
+```
+
+```{r}
+Neuquen <- length (which (prov == "Neuquen"))
+
+Rio_Negro <- length (which (prov == "Rio Negro"))
+
+Mendoza <- length (which (prov == "Mendoza"))
+
+```
+
+para graficos de torta
+```{r}
+EE_torta <- nrow(subset(datos, datos$tipoestado == "Extraccion Efectiva"))
+
+
+ES_torta <- nrow(subset(datos, datos$tipoestado == "En Estudio"))
+
+
+PT_torta <- nrow(subset(datos, datos$tipoestado == "Parado Transitoriamente"))
+```
+
+
+```{r}
+SHALE <- c(length (which (sub_tipo_rec == "SHALE")))
+TIGHT <- c(length (which (sub_tipo_rec == "TIGHT")))
+
+```
+
+
+
+
+# Desarrollo
+
+## Casos de estudio
+
+El caso de estudio son las concesiones operadas por YPF SA, para la produccion de hidrocarburos no convencionales durante el mes de marzo de 2024
+
+
+## Navegación y Manipulacion de datos.
+
+A partir del dataset, comenzamos a utilizar algunas de las funciones aprendidas en el desarrollo del curso, para explorar el contenido de la tabla.
+
+1. Comenzaremos con el encabezado de nuestra tabla utilizando el comando "names()"
+
+    De los siguientes datos, podemos identificar cuales analizaremos a lo largo del trabajo. En este caso, vemos que los datos de producción de petróloeo y gas son los de mayor interés.
+
+```{r}
+
+names(datos)
+
+```
+
+2. Para ver las dimensiones (filas y columnas) colocamos el comando dim()
+
+```{r}
+dim(datos)
+
+```
+
+de la cual obtenemos que la cantidad de pozos declarados por YPF son 2108, en el período de estudio. 
+
+3. Cabecera y pie de la tabla
+
+Se presenta un corte del dataset que representa los primeros y ultimos datos de la tabla, la cual se adjunta completa al final del documento.
+
+Cabecera.
+
+```{r}
+head(datos)
+
+```
+
+Pie.
+
+```{r}
+tail(datos)
+
+```
+
+**Maxima Produccion de petroleo**
+
+Ubicacion de la fila:
+
+```{r}
+which.max(Produccion_NC_YPF$prod_pet)
+
+```
+cuyo valor correspondiente es:
+
+
+```{r}
+Produccion_NC_YPF$prod_pet[68]
+```
+
+**Maxima Produccion de gas**
+
+Ubicacion de la fila:
+
+```{r}
+which.max(Produccion_NC_YPF$prod_gas)
+
+```
+cuyo valor correspondiente es:
+
+
+```{r}
+Produccion_NC_YPF$prod_gas[148]
+```
+
+
+**Minima Produccion petroleo**
+
+Ubicacion de la fila:
+
+```{r}
+which.min(Produccion_NC_YPF$prod_pet)
+```
+cuyo valor corresponde a
+
+```{r}
+Produccion_NC_YPF$prod_pet[1]
+```
+Para el caso de gas el valor tambien devolverá 0 ya que toma el valor de pozos sin produccion actualmente
+
+
+
+
+
+
+## Análisis de la produccion.
+
+
+
+se puede observar en el siguiente gráfico la produccion total de petroleo y gas de cada pozo, clasificado por tipo de extraccion
+
+```{r}
+tipo_de_extraccion<- C(datos$tipoextraccion)
+
+prod.tipoextraccion<- data.frame(tipo_de_extraccion,ProdPet,ProdGas)
+
+head(prod.tipoextraccion)
+
+```
+
+una forma de representarlo mediante grafico de coordenadas polares:
+
+
+```{r}
+ggplot(prod.tipoextraccion, aes(x = tipo_de_extraccion, y = ProdGas, col = ProdPet, group = ProdPet)) + geom_point() + geom_line() + coord_polar()
+
+```
+total de produccion por sistema de extraccion:
+
+```{r}
+# se crea dataframe para grafico de radar  
+
+sistema_extraccion<- c("Surgencia Natural","Plunger Lift","Bombeo Mecanico","Gas Lift")
+
+total_pet_por_sistema<- c(Surgencia_Natural_Pet,Plunger_Lift_Pet,Bombeo_Mecanico_Pet,Gas_Lift_Pet)
+
+total_gas_por_sistema<- c(Surgencia_Natural_gas,Plunger_Lift_gas,Bombeo_Mecanico_gas,Gas_Lift_gas)
+
+prod.tipoextraccion<- data.frame(sistema_extraccion,total_pet_por_sistema,total_gas_por_sistema)
+
+head(prod.tipoextraccion)
+```
+
+graficamente:
+```{r}
+ggplot(prod.tipoextraccion, aes(x = sistema_extraccion, y = total_pet_por_sistema, col = total_pet_por_sistema, group = total_pet_por_sistema)) + geom_point() + geom_line() + coord_polar()
+
+```
+
+
+
+```{r}
+par(mfrow =c(1,2))
+ggplot(prod.tipoextraccion,aes(x=sistema_extraccion,y= total_pet_por_sistema))+geom_bar(stat="identity")
+ggplot(prod.tipoextraccion,aes(x=sistema_extraccion,y= total_gas_por_sistema))+geom_bar(stat="identity")
+
+```
+
+
+
+Tambien Podemos definir la cantidad de pozos en funcion a su tipo de estado:
+
+```{r}
+pozos_por_estado<-data.frame(EEF, ES, RRSA, ARGP, PT, ERG, EER, ER, EIE , AT, EE, OCI, A, AA)
+
+pozos_por_estado
+```
+donde:
+EEF = Extraccion Efectiva
+ES = En Estudio
+PT = Parado Transitoriamente
+ARGP = Parado Alta Relacion Gas/Petroleo
+EER = En Espera de Reparacion
+EIE = En Inyeccion Efectiva	
+AT = Abandono Temporario	
+A = Abandonado
+EE = En Estudio
+AA = A Abandonar
+ER = En Reparacion
+ERG = En Reserva de Gas
+RRSA = En Reserva para Recup. Sec./Asist.
+OCI = Otras Situacion Inactivo
+
+Podemos obserbar a continuación, la produccion de petroleo y gas de estos pozos. 
+Lo siguiente es un extracto de la tabla 2, la cual se muestra completa en la seccion correspondiente
+
+```{r}
+
+dataf_tipoestado <- data.frame(Sigla, TipoEstado, ProdGas, ProdPet)
+
+head(dataf_tipoestado,n=4L)
+
+```
+
+```{r}
+tail(dataf_tipoestado,n=4L)
+```
+
+Tambien podemos clasificar segun:
+*sub tipo de pozo*
+
+```{r}
+data.frame(SHALE, TIGHT)
+```
+
+graficamente:
+
+```{r}
+# Determinamos la diferencia del sub tipo de recurso
+subtipo <- c(SHALE, TIGHT)
+etiquetas_subtipo2 <- c("SHALE", "TIGHT")
+etiquetas_subtipo <- paste(etiquetas_subtipo2, subtipo)
+
+pie(subtipo, etiquetas_subtipo,
+    main = "Grafico Subtipos de pozos",
+    sub = "Clasificacion ")
+
+```
+
+
+
+### Produccion de petroleo y gas
+
+* Producción total Pet NC - YPF 
+
+```{r}
+sum(ProdPet)
+```
+
+* Obtenemos los principales datos estadísticos con el comando summary
+
+```{r}
+summary(ProdPet)
+```
+
+de estos datos, se observa que la máxima producción de petróleo de uno de los pozos es de 7390.03 m3/d mientras que la menor es de 0 (pozos parados).
+La producción promedio del conjunto de pozos no convencionales para el mes de marzo fue de 490m3/d.
+
+* Producción total gas NC - YPF 
+
+```{r}
+sum(ProdGas)
+```
+
+```{r}
+summary(ProdGas)
+```
+de estos datos, se observa que la máxima producción de petróleo de uno de los pozos es de 14212,68 m3/d mientras que la menor es de 0 (pozos parados).
+La producción promedio del conjunto de pozos no convencionales para el mes de marzo fue de 357,26 m3/d.
+
+
+A continuación, se puede observar los gráficos analizando estos valores:
+
+
+```{r}
+plot(ProdPet, col='steelblue', ,, main = "Distribución de Producción de Petróleo en pozos NC - YPF")
+```
+
+
+```{r}
+plot(sort(ProdPet))
+
+```
+
+
+
+```{r}
+hist(ProdPet, col='steelblue', xlab = 'Prod Pet m3/d', ylab = 'Numero de pozos', main = "Distribución de Producción de Petróleo en pozos NC - YPF")
+abline(v = mean(ProdPet), col='red', lwd = 1)
+```
+
+## Pozos en extraccion efectiva
+
+Los pozos cuentan con diferentes estados dentro de los cuales destacan:
+
+```{r}
+data.frame(EEF, ES, PT)
+```
+
+```{r}
+tipoestado1 <- c(EEF, ES, PT)
+etiquetas_2 <- c("Extraccion Efectiva", "En Estudio", "Parado Transitorio")
+etiquetas <- paste(etiquetas_2, tipoestado1)
+
+pie(tipoestado1, etiquetas,
+    main = "Gráfico de torta ",
+    sub = "Clasificacion de tipo de estado")
+
+```
+
+
+
+
+
+Se presentan los datos por tipo de estado, mostrando:
+
+corte superior e inferior de la tabla:
+
+```{r}
+dataf_tipoestado <- data.frame(TipoEstado, ProdGas, ProdPet)
+head(dataf_tipoestado,n=4L)
+
+```
+```{r}
+tail(dataf_tipoestado,n=4L)
+```
+
+se filtran los datos por extraccion efectiva:
+
+corte superior e inferior de la tabla:
+
+```{r}
+ExtraccionEfectiva <- subset(dataf_tipoestado, TipoEstado == "Extraccion Efectiva")
+head(ExtraccionEfectiva,n=5L)
+
+```
+
+```{r}
+tail(ExtraccionEfectiva,n=5L)
+```
+De esta manera los datos reales de produccion, teniendo solo en cuenta los pozos en extraccion efectiva son de acuerdo al siguiente grafico
+
+* Producción Pet
+
+```{r}
+hist(ExtraccionEfectiva$ProdPet, breaks = 100, col='steelblue', xlab = 'Prod Pet m3/d', ylab = 'Numero de pozos en Extracción efectiva', main = "Producción de Petróleo en pozos NC - YPF")
+```
+
+* Producción Gas
+
+```{r}
+hist(ExtraccionEfectiva$ProdGas, breaks = 100, col='steelblue', xlab = 'Prod Gas Mm3/d', ylab = 'Numero de pozos en Extracción efectiva', main = "Producción de GAS en pozos NC - YPF")
+```
+
+*Estadisticas reales de produccion de petroleo y gas*
+
+de esta manera tambien los datos estadisticos se acercan mejor a los valores reales.
+
+estadisticas para produccion de petroleo:
+
+```{r}
+summary(ExtraccionEfectiva$ProdPet)
+```
+de estos datos, se observa que la máxima producción de petróleo de uno de los pozos es de 7390,03 m3/d mientras que la menor es de 0 (pozos parados).
+La producción promedio del conjunto de pozos no convencionales para el mes de marzo fue de 624,02 m3/d.
+
+podemos comparar estos valores con el promedio de produccion de petroleo, teniendo en cuenta todo tipo de estado de pozo que es:
+
+```{r}
+prom_pet
+```
+
+
+estadisticas para produccion de gas:
+
+```{r}
+summary(ExtraccionEfectiva$ProdGas)
+```
+de estos datos, se observa que la máxima producción de gas de uno de los pozos es de 14212,68 m3/d mientras que la menor es de 0 (pozos parados).
+La producción promedio del conjunto de pozos no convencionales para el mes de marzo fue de 454,5 m3/d.
+
+
+podemos comparar estos valores con el promedio de produccion de gas, teniendo en cuenta todo tipo de estado de pozo que es:
+
+```{r}
+prom_gas
+```
+
+Asi mismo podemos comparar estos valores con la produccion de agua:
+
+```{r}
+prom_agua
+```
+de esta manera comparamos:
+
+```{r}
+prom_R_Pet<- mean(ExtraccionEfectiva$ProdPet)
+prom_R_gas<- mean(ExtraccionEfectiva$ProdGas)
+rotulos_prom_prod <- c("prom_pet","prom_R_Pet","prom_gas","prom_R_gas","prom_agua")
+promedios_prod<- c(prom_pet,prom_R_Pet,prom_gas,prom_R_gas,prom_agua)
+
+compar.prom <- data.frame(rotulos_prom_prod,promedios_prod)
+compar.prom
+```
+graficamente:
+
+```{r}
+promedios_grafico <- c(prom_pet, prom_gas, prom_agua)
+etiquetas_compar_promedios <- c("Petroleo", "Gas", "Agua")
+etiquetas_compar_promedios <- paste(etiquetas_compar_promedios, promedios_grafico)
+etiquetas_compar_promedios <- paste(etiquetas_compar_promedios, "%", sep = " ")
+pie(promedios_grafico, etiquetas_compar_promedios,
+    main = "Promedio de los Fluidos Producidos",
+    sub = "Clasificacion")
+
+```
+
+
+
+
+distribucion normal:
+```{r}
+x <- seq(-4, 4, length.out=1000)
+dnorm_pet <- dnorm(x)
+plot(dnorm_pet, type="l")
+```
+*ploteos de densidad*
+
+```{r}
+plot(density(ProdPet), main = "Gráfico de Densidad - Produccion Petroleo", ylab="Cantidad relativa de pozos",xlab="porduccion")
+```
+
+```{r}
+par(mfcol=c(2,2))
+plot(density(ExtraccionEfectiva$ProdPet))
+plot(density(ExtraccionEfectiva$ProdPet))
+plot(density(Produccion_NC_YPF$prod_agua))
+```
+de manera ordenada:
+
+```{r}
+par(mfcol=c(1,2))
+plot(sort(Produccion_NC_YPF$prod_pet))
+plot(sort(Produccion_NC_YPF$prod_gas))
+plot(sort(Produccion_NC_YPF$prod_agua))
+```
+
+*Comparacion de variables*
+
+producción de gas vs produccion de petróleo:
+
+```{r}
+plot(Produccion_NC_YPF$prod_pet,Produccion_NC_YPF$prod_gas)
+abline(h=prom_pet, col="red")
+abline(v=prom_gas, col="blue")
+```
+
+
+## Profundidad de los Pozos
+
+
+```{r}
+summary(datos$profundidad)
+
+```
+Si bien es un dato relativo, porque mucho de los pozos son horizontales, se podria desprender de estos valores que el promedio de profundiad de los pozos es de 3935m. El máximo valor corresponde a 7784 (porque el valor se interpreta que incluye el tramo horizontal) y que los pozos con valor de profundiad 0 son los que no tienen cargados estos datos en el dataset.
+
+
+* representación Gráfica de las profundidades
+
+```{r}
+plot(datos$profundidad,  col='steelblue', xlab = 'Pozos', ylab = 'Profundidad', main = "Profundidad de los pozos NC - YPF")
+```
+
+```{r}
+hist(profundidad,  main = "Gráfico de Barras - Profundidad", ylab="Cantidad relativa de pozos",xlab="Profundidad")
+```
+
+```{r}
+Densidad <- density(profundidad)
+
+plot(density(profundidad), main = "Gráfico de Densidad - Profundidad", ylab="Cantidad relativa de pozos",xlab="Profundidad")
+```
+Podemos llegar a la conclusion que la profundidad que la mayor profundidad reflejada de los pozos estan entre los 2000 y 6000 metros
+
+
+```{r}
+plot(sort(profundidad))
+```
+
+
+## Representación geográfica de los pozos
+
+Presentamos las distintas areas concecionadas y la cantidad de pozos que le corresponden:
+
+```{r}
+data.frame(AGUADA_DE_LA_ARENA, AGUADA_DEL_CHANAR, AL_NORTE_DE_LA_DORSA, BAJO_DEL_TORO, BAJO_DEL_TORO_NORTE, BANDURRIA_SUR, CERRO_ARENA, CERRO_LAS_MINAS, CERRO_MANRIQUE, CHIUIDO_DE_LA_SIERRA_NEGRAS, CN_VII_A, DADIN, EL_OREJANO, ESTACION_FERNADEZ_ORO, FILO_MORADO, LA_AMARGA_CHICA, LA_RIBERA_BLOQUE_I, LA_RIBERA_BLOQUE_II, LAS_MANADAS, LAS_TACANAS, LOMA_AMARILLA_SUR, LOMA_CAMPANA, LOMA_DEL_MOLLE, LOMA_LA_LATA_SIERRA_BARROSA, LOS_CALDENES, OCTOGONO, PASO_DE_LAS_BARDAS_NORTE, RINCON_DEL_MANGRULLO, RIO_NEUQUEN, VALLE_DEL_RIO_GRANDE)
+```
+
+**determinamos la cantidad de areas**
+
+que corresponde a la cantidad de: 
+
+```{r}
+# Determinar la cantidad Se designa una variable "cantidad_area" para contabilizar
+
+Areas <- c(data.frame(AGUADA_DE_LA_ARENA, AGUADA_DEL_CHANAR, AL_NORTE_DE_LA_DORSA, BAJO_DEL_TORO, BAJO_DEL_TORO_NORTE, BANDURRIA_SUR, CERRO_ARENA, CERRO_LAS_MINAS, CERRO_MANRIQUE, CHIUIDO_DE_LA_SIERRA_NEGRAS, CN_VII_A, DADIN, EL_OREJANO, ESTACION_FERNADEZ_ORO, FILO_MORADO, LA_AMARGA_CHICA, LA_RIBERA_BLOQUE_I, LA_RIBERA_BLOQUE_II, LAS_MANADAS, LAS_TACANAS, LOMA_AMARILLA_SUR, LOMA_CAMPANA, LOMA_DEL_MOLLE, LOMA_LA_LATA_SIERRA_BARROSA, LOS_CALDENES, OCTOGONO, PASO_DE_LAS_BARDAS_NORTE, RINCON_DEL_MANGRULLO, RIO_NEUQUEN, VALLE_DEL_RIO_GRANDE))
+
+cantidad_areas <- c(Areas)
+length (cantidad_areas)
+
+```
+
+**Determinamos la cantidad de pozos por provincias**
+
+```{r}
+data.frame(Neuquen, Rio_Negro, Mendoza)
+```
+
+
+## MAPA INTERACTIVO
+
+ploteo simple de las coordenadas para poder comparar con los resultados de la parte geográfica de este trabajo:
+
+```{r}
+plot(datos$coordenadax, datos$coordenaday)
+
+```
+
+```{r}
+inventario <- read_delim("Produccion NC YPF.csv", 
+    delim = ";", escape_double = FALSE, col_types = cols(prod_gas = col_double(), 
+        coordenadax = col_number(), coordenaday = col_number()), 
+    trim_ws = TRUE)
+
+
+puntos <- data.frame(inventario)
+```
+
+```{r}
+
+# PASO 2. Realizar clustering con k-means
+set.seed(123) # Para reproducibilidad
+kmeans_result <- kmeans(puntos[, c('coordenadax','coordenaday')], centers = 4)
+
+```
+
+```{r}
+
+# PASO 3. Añadir la clasificación de clusters al inventario
+inventario$cluster <- kmeans_result$cluster
+
+```
+
+```{r}
+# PASO 4. Convertir a un objeto sf para poder graficar en un mapa
+inventario_sf <- st_as_sf(inventario, coords = c('coordenadax', 'coordenaday'), crs = 4326)
+
+```
+
+```{r}
+# PASO 5. Obtener el mapa de Argentina
+argentina_map <- st_as_sf(maps::map('world', 'argentina', plot = FALSE, fill = TRUE))
+
+```
+
+```{r}
+# PASO 6. Graficar un mapa con los clusters (MApa sencillo)
+ggplot() +
+  geom_sf(data = argentina_map, fill = 'lightgrey', color = 'white') +
+  geom_sf(data = inventario_sf, aes(color = factor(cluster)), size = 2, alpha = 0.7) +
+  labs(color = 'Cluster') +
+  theme_minimal() +
+  ggtitle('Mapa pozos no convencional argentina')
+
+```
+
+```{r}
+# PASO 7. Crear un mapa interactivo con leaflet
+
+mapa <- leaflet(inventario) %>%
+  addTiles() %>%  
+  addCircleMarkers(lng = ~coordenaday, lat = ~coordenadax, popup = ~as.character(cluster), color = ~factor(cluster), clusterOptions = markerClusterOptions()) %>%
+  addProviderTiles(providers$CartoDB.Positron)
+
+
+```
+
+
+```{r}
+## PASO 8. Creacion de un Mapa Georeferenciado
+
+activos <- data.frame(
+  lat = puntos$coordenaday,
+  long = puntos$coordenadax,
+    stringsAsFactors = FALSE
+)
+
+```
+
+```{r}
+## PASO 9. convierte la codificación de un vector de caracteres de una codificación a otra. 
+
+
+leaflet(data = activos[1:299, ]) %>%
+  addTiles() %>%
+  addMarkers(
+    lng = ~long, 
+    lat = ~lat, )
+  
+
+
+```
+
+
+# Conclusion y discusión final
+
+El desarrollo de este trabajo implico la colaboracion del grupo y la interpretacion de datos como su analisis y manipulacion. de esta manera adquirimos experiencia tanto en el area de investigacion, analisis de datos y programación en R.
+
+
+
+# Figuras, Tablas y esquemas
+
+tabla 1 - Data set, Produccion de HC no convencional YPF Marzo 2024
+```{r}
+datos
+```
+
+tabla 2 - produccion de pozos por tipo de estado.
+
+```{r}
+dataf_tipoestado
+```
+
+tabla 3 - extraccion efectiva
+
+```{r}
+ExtraccionEfectiva
+```
+# Patents
+
+This section is not mandatory, but may be added if there are patents resulting
+from the work reported in this manuscript.
